@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #252152;
+  color: antiquewhite;
+  font-family: "Exo 2", sans-serif;
+}
+:focus {
+  outline: solid 1px;
+  box-shadow: 0px 0px 8px 3px #fce205;
+  height: fit-content;
+}

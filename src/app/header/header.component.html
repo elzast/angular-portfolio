@@ -1,0 +1,31 @@
+<header class="all-header-elements">
+  <div class="title-div">
+    <h1 class="title" routerLink="/home">Elijah Stone</h1>
+  </div>
+  <i
+    (click)="toggleNav()"
+    tabindex="0"
+    class="fa fa-bars fa-2x"
+    aria-hidden="true"
+  ></i>
+  <nav class="nav-menu-mobile">
+    <ul *ngIf="nav" class="nav-list-container-mobile">
+      <li class="nav-list">
+        <a class="nav-link-mobile" routerLink="/home">Home</a>
+      </li>
+      <li class="nav-list">
+        <a class="nav-link-mobile" routerLink="/projects">Projects</a>
+      </li>
+    </ul>
+  </nav>
+  <nav class="nav-menu-desktop">
+    <ul class="nav-list-container-desktop">
+      <a class="nav-link-desktop" routerLink="/home"
+        ><li class="nav-list-desktop">Home</li></a
+      >
+      <a class="nav-link-desktop" routerLink="/projects"
+        ><li class="nav-list-desktop">Projects</li></a
+      >
+    </ul>
+  </nav>
+</header>

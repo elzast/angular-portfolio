@@ -1,0 +1,102 @@
+.about-parent-div {
+  display: flex;
+  width: 29em;
+  height: 22em;
+  background-color: rgba(163, 164, 198, 0.4);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%);
+  margin: auto;
+  border-radius: 1.3em;
+}
+
+.about-heading {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  margin: 0;
+  padding: 0.2em;
+  transform: translate(-50%);
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: antiquewhite;
+  text-shadow: 0.05em 0.05em black;
+  font-size: 1.8em;
+  font-weight: 700;
+  font-family: "Exo 2", sans-serif;
+}
+/* put in image for portfolio */
+/* .about-img {
+        width: 125px;
+        height: 125px;
+        background-color: rgba(51, 57, 86, 0.5);
+        border-radius: 10%;
+        position: absolute;
+        left: 50%;
+        top: 22%;
+        transform: translate(-50%);
+      } */
+
+.contact-span {
+  color: lightgreen;
+  font-weight: 600;
+}
+.about-text {
+  height: 10em;
+  width: 90%;
+  padding: 0.3em;
+  margin: 0.3em;
+  position: absolute;
+  bottom: 18%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  background-color: rgba(51, 57, 86, 0.8);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-top-right-radius: 0.6em;
+  border-bottom-right-radius: 0.6em;
+}
+::-webkit-scrollbar {
+  width: 0.4em;
+  overflow-y: scroll;
+  background: grey;
+  border-radius: 1em;
+  box-shadow: inset 0 0 2px #707070;
+}
+::-webkit-scrollbar-thumb {
+  background: slateblue;
+  border-radius: 1em;
+  height: 30%;
+}
+@media only screen and (min-width: 768px) {
+  .about-parent-div {
+    display: flex;
+    width: 75%;
+    top: 35%;
+  }
+  .about-heading {
+    left: 18.5%;
+    font-size: 2.3em;
+    top: 3%;
+  }
+  .about-img {
+    left: 89%;
+    top: 5%;
+    height: 250px;
+    width: 250px;
+  }
+  .about-text {
+    width: 85%;
+    height: 13.5em;
+    bottom: 10%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
